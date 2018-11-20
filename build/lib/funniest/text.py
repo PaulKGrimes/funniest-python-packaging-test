@@ -1,6 +1,9 @@
+from __future__ import print_function
+
+from pkg_resources import resource_string
 from markdown import markdown
 
+joke_text = resource_string(__name__, 'data/joke.txt')
+
 def joke():
-    return markdown(u'Wenn ist das Nunst\u00fcck git und Slotermeyer?'
-                    u'Ja! ... **Beiherhund** das Oder die Flipperwaldt '
-                    u'gersput.')
+    return markdown(joke_text)

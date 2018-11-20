@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 from setuptools import setup, find_packages
 
 def readme():
@@ -26,8 +28,8 @@ setup(name='funniest',
       include_package_data=True,
       scripts=['bin/funniest-joke'],
       entry_points = {
-        'console_scripts': ['funniest-joke=funniest.command_line:main'],
-      }
+        'console_scripts': ['funniest-joke=funniest.command_line:main']
+      },
       test_suite='nose.collector',
       tests_require=['nose'],
       zip_safe=False)
