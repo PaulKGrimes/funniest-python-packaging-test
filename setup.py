@@ -8,7 +8,7 @@ def readme():
 
 setup(name='funniest',
       version='0.1',
-      description='Not the funniest joke in the world',
+      description='The funniest joke in the world',
       long_description=readme(),
       classifiers=[
         'Development Status :: 3 - Alpha',
